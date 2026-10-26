@@ -1,0 +1,36 @@
+name: sos_mobile_app
+description: "A standalone emergency SOS mobile application for autonomous drone dispatch."
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Networking & Real-Time Telemetry
+  http: ^1.2.1
+  web_socket_channel: ^3.0.0
+
+  # Tactical Mapping (Leaflet equivalent in Flutter)
+  flutter_map: ^7.0.2
+  latlong2: ^0.9.1
+
+  # Live Geolocation
+  geolocator: ^12.0.0
+
+  # Storage & Utilities
+  shared_preferences: ^2.2.3
+  url_launcher: ^6.3.0
+  google_fonts: ^6.2.1
+  intl: ^0.19.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
